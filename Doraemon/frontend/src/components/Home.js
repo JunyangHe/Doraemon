@@ -17,8 +17,8 @@ export default class Home extends Component {
                 <Route path='/' element={
                     <div>
                         <img src="../static/images/Home.png" />
-                        <Link to="/before"><button class="beforeBtn">留学前</button></Link>
-                        <Link to="/while"><button class="whileBtn">留学中</button></Link>
+                        <Link to="/before"><button class="beforeBtn button">留学前</button></Link>
+                        <Link to="/while"><button class="whileBtn button">留学中</button></Link>
                     </div>
                 
                 }/>

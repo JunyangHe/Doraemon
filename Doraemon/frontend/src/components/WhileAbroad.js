@@ -6,6 +6,10 @@ export default class WhileAbroad extends Component {
     }
 
     render() {
-        return <h1>留学中</h1>;
+        return (
+            <body class="second">
+                <h1>留学中</h1>
+            </body>
+        );
     }
 }
