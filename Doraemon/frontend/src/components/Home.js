@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BeforeAbroad from "./BeforeAbroad";
 import WhileAbroad from "./WhileAbroad";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 export default class Home extends Component {
     constructor(props) {
@@ -14,7 +14,14 @@ export default class Home extends Component {
             <Routes>
                 <Route path='/before' element={<BeforeAbroad />}/>
                 <Route path='/while' element={<WhileAbroad />}/>
-                <Route path='/' element={<p>This is the Home Page</p>}/>
+                <Route path='/' element={
+                    <div>
+                        <img src="../static/images/Home.png" />
+                        <Link to="/before"><button class="beforeBtn">留学前</button></Link>
+                        <Link to="/while"><button class="whileBtn">留学中</button></Link>
+                    </div>
+                
+                }/>
             </Routes>
         </Router>);
     }

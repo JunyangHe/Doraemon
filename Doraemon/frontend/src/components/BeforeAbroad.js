@@ -6,6 +6,6 @@ export default class BeforeAbroad extends Component {
     }
 
     render() {
-        return <p>留学前</p>;
+        return <h1>留学前</h1>;
     }
 }

@@ -17,3 +17,39 @@ html, body {
     height: 100%;
     display: flex;
 }
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.beforeBtn {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0275FF;
+    color: white;
+    font-size: 30px;
+    padding: 30px 50px;
+    border: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.whileBtn {
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0275FF;
+    color: white;
+    font-size: 30px;
+    padding: 30px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
