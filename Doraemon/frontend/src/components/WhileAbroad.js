@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
+import { Link } from 'react-router-dom';
 
 export default class WhileAbroad extends Component {
     constructor(props) {
@@ -146,10 +145,13 @@ export default class WhileAbroad extends Component {
 
                 </Stack>
                 <div class="empty-space">
+                    <Link to="/">
                     <button class="image-btn">
                         <img class="button" src="../static/images/Home.png" />
                     </button>
+                    </Link>
                 </div>
+                
             </Drawer>
             
         );

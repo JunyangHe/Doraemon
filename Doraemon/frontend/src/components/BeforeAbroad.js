@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 
 
 export default class BeforeAbroad extends Component {
@@ -16,14 +15,15 @@ export default class BeforeAbroad extends Component {
             <Drawer 
                 PaperProps={{
                     sx: {
-                    backgroundColor: "#0275FF"
+                        width: "100vw",
+                        backgroundColor: "#0275FF"
                     }
                 }}
                 variant="persistent"
                 anchor="left"
                 open={true}
             >
-                <Stack direction = "row" spacing="5vw" ml="10vw" mr="10vw" mt="15vh" flexWrap="wrap" useFlexGap >
+                <Stack direction = "row" spacing="5vw" ml="10vw" mt="15vh" flexWrap="wrap" useFlexGap >
 
                     <Paper elevation={16} square sx={{width: 400, height: 600}}>
                         <h2>&nbsp;</h2>
@@ -38,7 +38,7 @@ export default class BeforeAbroad extends Component {
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
                             <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
+                                <Link to="/visa"><button class="stage2btn button">点击查看</button></Link>
                             </li>
                         </ul>
                         
@@ -84,9 +84,11 @@ export default class BeforeAbroad extends Component {
 
                 </Stack>
                 <div class="empty-space">
+                    <Link to="/">
                     <button class="image-btn">
                         <img class="button" src="../static/images/Home.png" />
                     </button>
+                    </Link>
                 </div>
             </Drawer>
 

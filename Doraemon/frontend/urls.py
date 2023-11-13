@@ -4,5 +4,7 @@ from .views import index
 urlpatterns = [
     path('', index),
     path('before', index),
-    path('while', index)
+    path('while', index),
+    path('visa', index)
+    
 ]
