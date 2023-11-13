@@ -21,9 +21,8 @@ export default class WhileAbroad extends Component {
                 variant="persistent"
                 anchor="left"
                 open={true}
-            
             >
-                <Stack direction = "row" spacing = {15} ml = {25} mr = {25} mt = {20} flexWrap="wrap" useFlexGap >
+                <Stack direction = "row" spacing="5vw" ml="10vw" mr="10vw" mt="15vh" flexWrap="wrap" useFlexGap >
 
                     <Paper elevation={16} square sx={{width: 400, height: 600}}>
                         <h2>&nbsp;</h2>
@@ -144,9 +143,13 @@ export default class WhileAbroad extends Component {
                             
                         </ul>
                     </Paper>
+
                 </Stack>
-                
-                
+                <div class="empty-space">
+                    <button class="image-btn">
+                        <img class="button" src="../static/images/Home.png" />
+                    </button>
+                </div>
             </Drawer>
             
         );
