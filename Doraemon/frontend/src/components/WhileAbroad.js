@@ -21,7 +21,7 @@ export default class WhileAbroad extends Component {
                 anchor="left"
                 open={true}
             >
-                <Stack direction = "row" spacing="5vw" ml="10vw" mr="10vw" mt="15vh" flexWrap="wrap" useFlexGap >
+                <Stack direction = "row" spacing="10vw" mt="15vh" flexWrap="wrap" useFlexGap justifyContent="center" >
 
                     <Paper elevation={16} square sx={{width: 400, height: 600}}>
                         <h2>&nbsp;</h2>
@@ -35,11 +35,10 @@ export default class WhileAbroad extends Component {
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
                         </ul>
+                        <div class="stage2">
+                            <Link to="/communication"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
                         
                     </Paper>
 
@@ -55,11 +54,10 @@ export default class WhileAbroad extends Component {
                             <li class="asterisk">买车指南</li>
                             <li class="asterisk">车辆保险及保养指南</li>
                             <li class="asterisk">租车指南</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
                         </ul>
+                        <div class="stage2">
+                            <Link to="/transportation"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
 
                     </Paper>
 
@@ -75,12 +73,10 @@ export default class WhileAbroad extends Component {
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
-                            
                         </ul>
+                        <div class="stage2">
+                            <Link to="/finance"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
                     </Paper>
 
                     <Paper elevation={16} square sx={{width: 400, height: 600}}>
@@ -95,11 +91,10 @@ export default class WhileAbroad extends Component {
                             <li class="asterisk">学生办理SSN指南</li>
                             <li class="asterisk">学生报税指南</li>
                             <li class="asterisk">学生工作身份指南</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
                         </ul>
+                        <div class="stage2">
+                            <Link to="/study&work"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
                         
                     </Paper>
 
@@ -115,11 +110,10 @@ export default class WhileAbroad extends Component {
                             <li class="asterisk">美国租房指南</li>
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
                         </ul>
+                        <div class="stage2">
+                            <Link to="/dining&accommodation"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
 
                     </Paper>
 
@@ -134,13 +128,11 @@ export default class WhileAbroad extends Component {
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
-                            
+                            <li>&nbsp;</li>     
                         </ul>
+                        <div class="stage2">
+                            <Link to="/entertainment"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
                     </Paper>
 
                 </Stack>

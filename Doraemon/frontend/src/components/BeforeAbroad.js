@@ -23,7 +23,7 @@ export default class BeforeAbroad extends Component {
                 anchor="left"
                 open={true}
             >
-                <Stack direction = "row" spacing="5vw" ml="10vw" mt="15vh" flexWrap="wrap" useFlexGap >
+                <Stack direction = "row" spacing="10vw" mt="15vh" flexWrap="wrap" useFlexGap justifyContent="center" >
 
                     <Paper elevation={16} square sx={{width: 400, height: 600}}>
                         <h2>&nbsp;</h2>
@@ -36,11 +36,11 @@ export default class BeforeAbroad extends Component {
                             <li class="asterisk">详细罗列办理签证所需材料</li>
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <Link to="/visa"><button class="stage2btn button">点击查看</button></Link>
-                            </li>
+                            
                         </ul>
+                        <div class="stage2">
+                            <Link to="/visa"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
                         
                     </Paper>
 
@@ -55,11 +55,10 @@ export default class BeforeAbroad extends Component {
                             <li class="asterisk">详细罗列办理体检所需材料</li>
                             <li class="asterisk">详细罗列出国所需疫苗</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
                         </ul>
+                        <div class="stage2">
+                            <Link to="/exam"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
 
                     </Paper>
 
@@ -74,12 +73,10 @@ export default class BeforeAbroad extends Component {
                             <li class="asterisk">罗列面向中国学生的保险公司</li>
                             <li>&nbsp;</li>
                             <li>&nbsp;</li>
-                            <li>&nbsp;</li>
-                            <li class="stage2">
-                                <button class="stage2btn button">点击查看</button>
-                            </li>
-                            
                         </ul>
+                        <div class="stage2">
+                            <Link to="/insurance"><button class="stage2btn button">点击查看</button></Link>
+                        </div>
                     </Paper>
 
                 </Stack>
